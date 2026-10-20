@@ -1,6 +1,8 @@
 # The Agentic Engineering Doctrine
 ## Principles, Governance, and Dual-Repo Topology for AI-Driven Teams
 
+**Written by Hanzala Rehan**
+
 > *"Stochastic models require deterministic harnesses. When AI agents write code, the repository architecture itself must become the governor of truth."*
 
 ---
@@ -130,7 +132,36 @@ Every agent operating under this constitution must enforce the following non-neg
 
 ---
 
-## 5. Summary Checklist for New Teams
+## 5. Production Case Study: Backstage Real-World Implementation
+
+The validity of this doctrine is proven in the production architecture of **[Backstage](https://github.com/Hanzala-plyance/backstage)** and its companion specifications repository **[backstage-specs](https://github.com/Hanzala-plyance/backstage-specs)**.
+
+<p align="center">
+  <img src="docs/media/07-gameplay.jpg" alt="Backstage Production Gameplay" width="85%"/>
+</p>
+
+### Real-World Architectural Samples:
+
+1. **Separation of Concerns:**
+   - **Canonical Specs:** [`backstage-specs/meta`](https://github.com/Hanzala-plyance/backstage-specs/tree/meta) holds all product intent, architectural decisions ([`business/decisions.md`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/business/decisions.md)), and formal task definitions ([`openspec/changes/`](https://github.com/Hanzala-plyance/backstage-specs/tree/meta/openspec/changes)).
+   - **Code Checkout:** [`Hanzala-plyance/backstage`](https://github.com/Hanzala-plyance/backstage) contains pure implementation code without specification noise.
+
+2. **Scoped Component Boundaries:**
+   - **Web / Electron Desktop:** [`desktop/`](https://github.com/Hanzala-plyance/backstage/tree/develop/desktop) — Sandboxed IPC and React/Three.js game loop.
+   - **Controller Hardware Bridge:** [`mac-riff/`](https://github.com/Hanzala-plyance/backstage/tree/develop/mac-riff) — Native macOS low-latency gamepad and guitar driver.
+   - **Stem Audio Converter:** [`song-converter/`](https://github.com/Hanzala-plyance/backstage/tree/develop/song-converter) — Python AI stem separator and chart generation pipeline.
+
+3. **Deterministic Gatekeeper:**
+   - The production gatekeeper [`scripts/check_promotion.py`](https://github.com/Hanzala-plyance/backstage/blob/develop/scripts/check_promotion.py) verifies git ancestor history against [`release/acceptance.json`](https://github.com/Hanzala-plyance/backstage/blob/develop/release/acceptance.json).
+
+| Song Library & Chart Management | Star Power FX & Multiplier Scoring |
+|:---:|:---:|
+| <img src="docs/media/03-library.jpg" alt="Song Library" width="420"/> | <img src="docs/media/08-star-power.jpg" alt="Star Power" width="420"/> |
+| *Atomic song ingestion via `song-converter`* | *Real-time Web Audio scoring loop in `desktop`* |
+
+---
+
+## 6. Summary Checklist for New Teams
 
 - [ ] Split specifications and planning into a dedicated `*-specs` repository on branch `meta`.
 - [ ] Initialize `governance/constitution.md` with non-negotiable operational tenets.

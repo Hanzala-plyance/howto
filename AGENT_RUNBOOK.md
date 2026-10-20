@@ -1,5 +1,7 @@
 # Agent Runbook: Autonomous Repository Conversion Prompt
 
+**Written by Hanzala Rehan**
+
 > **How to use this file:**
 > Copy the prompt block below and paste it directly into your AI agent (Claude Code, Cursor Composer, GitHub Copilot, Windsurf, or Codex). The agent will autonomously inspect your existing repository, configure the agentic constitution, scaffold the dual-repo or unified structure, and verify the promotion gates.
 

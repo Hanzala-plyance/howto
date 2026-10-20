@@ -1,6 +1,13 @@
 # 🏛️ The Backstage Agentic Architecture & Doctrine
 ### *A Production-Proven Tutorial & Blueprint for Multi-Agent Engineering Teams*
 
+**Written by Hanzala Rehan**
+
+<p align="center">
+  <img src="docs/media/wordmark.png" alt="Backstage Wordmark" width="480"/>
+</p>
+
+[![Author: Hanzala Rehan](https://img.shields.io/badge/Author-Hanzala%20Rehan-blue?style=flat-square)](https://github.com/Hanzala-plyance)
 [![Status: Production Proven](https://img.shields.io/badge/Status-Production%20Proven-success?style=flat-square)](./DOCTRINE.md)
 [![Governance: Universal Constitution](https://img.shields.io/badge/Governance-40%2B%20Agent%20Adapters-blue?style=flat-square)](./CONSTITUTION_PATTERN.md)
 [![Philosophy: Anthropic & OpenAI Aligned](https://img.shields.io/badge/Design-Anthropic%20%26%20OpenAI-purple?style=flat-square)](./DOCTRINE.md)
@@ -12,16 +19,18 @@
 
 1. [Why This Repository Exists](#-why-this-repository-exists)
 2. [The Founder Interview: Foundational Architectural Choices](#-the-founder-interview-core-design-choices)
-3. [The Core Problem: Why Autonomous AI Development Breaks Down](#-the-core-problem-why-naive-ai-development-fails)
-4. [Theoretical Grounding: Anthropic & OpenAI Principles](#-theoretical-grounding-anthropic--openai)
-5. [The 4 Pillars of the Architecture](#-the-4-pillars-of-the-architecture)
+3. [Live Production Exhibits: Backstage Built with Agents](#-live-production-exhibits-backstage-built-with-agents)
+4. [Coupled Production Samples in Backstage](#-coupled-production-samples-in-backstage)
+5. [The Core Problem: Why Autonomous AI Development Breaks Down](#-the-core-problem-why-naive-ai-development-fails)
+6. [Theoretical Grounding: Anthropic & OpenAI Principles](#-theoretical-grounding-anthropic--openai)
+7. [The 4 Pillars of the Architecture](#-the-4-pillars-of-the-architecture)
    - [Pillar 1: Dual-Repository Topology](#pillar-1-dual-repository-topology-preventing-context-pollution)
    - [Pillar 2: Universal Synchronized Constitution](#pillar-2-universal-synchronized-constitution-anti-drift)
    - [Pillar 3: Deterministic Branch Promotion Gates](#pillar-3-deterministic-branch-promotion-gates)
    - [Pillar 4: State Serialization & Multi-Agent Handoffs](#pillar-4-state-serialization--multi-agent-handoffs)
-6. [Interactive Readiness Diagnostic & Decision Tree](#-interactive-readiness-diagnostic)
-7. [Agent Runbook: Convert Your Repo in 5 Minutes](#-agent-runbook-convert-your-repo-now)
-8. [Artifact & Template Index](#-artifact--template-index)
+8. [Interactive Readiness Diagnostic & Decision Tree](#-interactive-readiness-diagnostic)
+9. [Agent Runbook: Convert Your Repo in 5 Minutes](#-agent-runbook-convert-your-repo-now)
+10. [Artifact & Template Index](#-artifact--template-index)
 
 ---
 
@@ -76,6 +85,68 @@ AI models are sycophantic by default: when asked to "ship it", they comply. The 
 
 No AI agent has persistent cross-session memory. If Agent A makes a decision on turn 1 and Agent B takes over on turn 2, Agent B will often undo Agent A's work. By writing decisions, test logs, commit hashes, and blockers into `handoff.md`, the state is serialized to disk and passed forward like a relay baton.
 </details>
+
+---
+
+## 📸 Live Production Exhibits: Backstage Built with Agents
+
+The power of this architecture is demonstrated in the real-world **Backstage** game suite — a rich Electron, React, Three.js, and Web Audio desktop rhythm gaming engine built entirely by multi-agent workflows obeying this constitution.
+
+### Exhibit A: Real-Time 3D Gameplay & Audio-Clock Engine
+> *Constitutional Rule Enforced: "Keep audio-clock gameplay and controller normalization strictly separate from React UI rendering."*
+
+<p align="center">
+  <img src="docs/media/07-gameplay.jpg" alt="Backstage 3D Gameplay Highway" width="90%"/>
+</p>
+
+*The 3D note highway, circular gem rendering, fret bars, and precision audio clock developed under [`desktop/`](https://github.com/Hanzala-plyance/backstage/tree/develop/desktop).*
+
+---
+
+### Exhibit B: Streak Multipliers, Star Power & Visual Effects
+> *Constitutional Rule Enforced: "Star Power doubles score multiplier, not playback speed. Track implemented core mechanics separately from advanced hardware parity."*
+
+| Star Power Activation | Streak Multipliers & Scoring |
+|:---:|:---:|
+| <img src="docs/media/08-star-power.jpg" alt="Star Power FX" width="450"/> | <img src="docs/media/09-streak.jpg" alt="Streak Multiplier" width="450"/> |
+| *Electrifying blue aura and score doubling* | *Dynamic multiplier feedback and beat tracking* |
+
+---
+
+### Exhibit C: Song Library, Character Select & Acceptance Results
+> *Constitutional Rule Enforced: "Publish validated completed songs atomically; never expose partial conversions as installed songs. Customer UI must remain isolated from operator diagnostics."*
+
+| Title & Local-First Resiliency | Atomic Song Library |
+|:---:|:---:|
+| <img src="docs/media/01-title.jpg" alt="Title Screen" width="450"/> | <img src="docs/media/03-library.jpg" alt="Song Library" width="450"/> |
+| *Instant local start without cloud dependence* | *Synchronized chart metadata & album previews* |
+
+| Character Roster | Machine-Verifiable Results |
+|:---:|:---:|
+| <img src="docs/media/04-characters.jpg" alt="Character Select" width="450"/> | <img src="docs/media/10-results.jpg" alt="Results Screen" width="450"/> |
+| *Modular avatar subsystem* | *Post-song accuracy, star rating, & note stats* |
+
+---
+
+## 🔗 Coupled Production Samples in Backstage
+
+Every pattern taught in this tutorial directly links to active, inspectable code in the Backstage production repositories:
+
+### 1. Planning & Governance Repository (`backstage-specs/meta`)
+- **Master Constitution Source:** [`governance/constitution.md`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/constitution.md) — The single source of truth generating all agent configurations.
+- **Component Rules Matrix:** [`governance/components.json`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/components.json) — Scoped instructions for desktop, controllers, and converter.
+- **Multi-Agent Adapters:** [`governance/adapters.json`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/adapters.json) — Target paths for Claude, Cursor, Copilot, Cline, etc.
+- **Architectural Decision Records (ADRs):** [`business/decisions.md`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/business/decisions.md) — Chronological log of scope changes and human authorizations.
+- **Active Feature Changes & Handoffs:** [`openspec/changes/`](https://github.com/Hanzala-plyance/backstage-specs/tree/meta/openspec/changes) — Granular tasks, proposals, and agent handoffs.
+- **Owner Sign-Off Evidence:** [`releases/`](https://github.com/Hanzala-plyance/backstage-specs/tree/meta/releases) — Formal release reports tied to candidate commits.
+
+### 2. Implementation Repository (`backstage`)
+- **Desktop Electron & React Runtime:** [`desktop/src/App.tsx`](https://github.com/Hanzala-plyance/backstage/blob/develop/desktop/src/App.tsx) — Sandboxed renderer and audio loop.
+- **Sandboxed IPC Bridge:** [`desktop/electron/main.cjs`](https://github.com/Hanzala-plyance/backstage/blob/develop/desktop/electron/main.cjs) — Strict, validated IPC communication.
+- **Production Gatekeeper Script:** [`scripts/check_promotion.py`](https://github.com/Hanzala-plyance/backstage/blob/develop/scripts/check_promotion.py) — Fail-closed ancestry and diff validator.
+- **Machine-Verifiable Evidence:** [`release/acceptance.json`](https://github.com/Hanzala-plyance/backstage/blob/develop/release/acceptance.json) — Required evidence payload for stage and main.
+- **Native Controller Adapter:** [`mac-riff/build/`](https://github.com/Hanzala-plyance/backstage/tree/develop/mac-riff/build) — Low-latency gamepad and guitar bridge.
+- **Autochart AI Audio Pipeline:** [`song-converter/run.py`](https://github.com/Hanzala-plyance/backstage/blob/develop/song-converter/run.py) — Neural stem separation and note charting.
 
 ---
 

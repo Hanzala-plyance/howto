@@ -1,6 +1,8 @@
 # The Constitution Pattern & Synchronization Engine
 ## Mechanical Enforcement of Multi-Agent Alignment without Configuration Drift
 
+**Written by Hanzala Rehan**
+
 > *"If an engineering rule lives only in a wiki, an AI agent will never read it. If it lives in ten different IDE config files, they will drift within forty-eight hours."*
 
 ---
@@ -169,3 +171,19 @@ Because the synchronizer takes paths from JSON configuration files and writes to
 1. **Refusal of Symlinks:** Rejects any target path or intermediate directory that resolves to a symbolic link, preventing symlink overwrite attacks.
 2. **Checkout Boundary Jail:** Asserts that the normalized target path stays strictly inside the designated repository root (`safePath` check).
 3. **Protected Branch Protection:** Enforces that instructions can only be installed on `develop` or feature branches; installing directly onto `stage` or `main` without promotion history is forbidden.
+
+---
+
+## 5. Live Production Samples in Backstage
+
+You can inspect the production deployment of this pattern across the Backstage repositories:
+
+| Resource | Repository Path | Purpose |
+|---|---|---|
+| **Master Constitution** | [`governance/constitution.md`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/constitution.md) | Canonical business, branch, and behavioral rules. |
+| **Component Matrix** | [`governance/components.json`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/components.json) | Scoped instructions for desktop, controllers, and converter. |
+| **Adapter Mapping** | [`governance/adapters.json`](https://github.com/Hanzala-plyance/backstage-specs/blob/meta/governance/adapters.json) | 40+ IDE agent target paths and frontmatter templates. |
+| **Desktop Component Target** | [`desktop/AGENTS.md`](https://github.com/Hanzala-plyance/backstage/blob/develop/desktop/AGENTS.md) | Injected Electron & React runtime instructions. |
+| **Hardware Component Target** | [`mac-riff/AGENTS.md`](https://github.com/Hanzala-plyance/backstage/blob/develop/mac-riff/AGENTS.md) | Injected native macOS controller driver instructions. |
+| **Audio AI Component Target** | [`song-converter/AGENTS.md`](https://github.com/Hanzala-plyance/backstage/blob/develop/song-converter/AGENTS.md) | Injected Python stem separation & chart generation rules. |
+
