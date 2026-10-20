@@ -1,0 +1,23 @@
+{
+  "name": "backstage-agentic-howto",
+  "version": "1.0.0",
+  "description": "Production-proven agentic architecture, constitution engine, and governance tutorial for multi-agent teams.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "agents:sync": "node templates/agents-sync.mjs sync",
+    "agents:check": "node templates/agents-sync.mjs check"
+  },
+  "keywords": [
+    "ai-agents",
+    "agentic-architecture",
+    "governance",
+    "anthropic",
+    "openai",
+    "claude-code",
+    "copilot",
+    "cursor"
+  ],
+  "author": "Backstage Architecture Team",
+  "license": "Apache-2.0"
+}

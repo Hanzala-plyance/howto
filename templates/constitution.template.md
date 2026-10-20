@@ -52,6 +52,5 @@ Explicit user instructions and higher-priority platform safety instructions take
 
 - Edit `governance/constitution.md`, component rules, and adapters on `meta`, then run `npm run agents:sync`.
 - Use `npm run agents:install -- --repo <checkout>` on a feature or develop branch; promote generated files through normal PR review.
-- Preserve handwritten developer text outside managed blocks (`<!-- CONSTITUTION:START -->...<!-- CONSTITUTION:END -->`).
-- Run instruction drift checks (`npm run agents:install -- --repo <checkout> --check`) in continuous integration. Never hand-edit generated blocks.
+- Preserve handwritten developer text outside the managed comment blocks. Run instruction drift checks (`npm run agents:install -- --repo <checkout> --check`) in continuous integration. Never hand-edit generated blocks.
 - Keep dependency caches, model weights, generated assets, local database state, and environment credentials outside Git.
