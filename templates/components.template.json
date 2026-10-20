@@ -1,0 +1,29 @@
+{
+  "repository": "{{CODE_REPO_URL}}",
+  "planningBranch": "meta",
+  "integrationBranch": "develop",
+  "stagingBranch": "stage",
+  "releaseBranch": "main",
+  "components": [
+    {
+      "id": "web-frontend",
+      "path": "frontend",
+      "description": "User-facing web application and UI components",
+      "instructions": [
+        "Keep state management predictable and isolated from presentation components.",
+        "Enforce strict client-side validation; never display unauthenticated debug or administrative panels.",
+        "Ensure full offline graceful degradation and user-friendly error banners."
+      ]
+    },
+    {
+      "id": "backend-api",
+      "path": "backend",
+      "description": "Core REST and GraphQL API services",
+      "instructions": [
+        "Validate all inputs at the controller boundary using strict schemas.",
+        "Never log sensitive credentials, authorization tokens, or raw user personal data.",
+        "Ensure database transactions are atomic and migrations are backwards-compatible."
+      ]
+    }
+  ]
+}
